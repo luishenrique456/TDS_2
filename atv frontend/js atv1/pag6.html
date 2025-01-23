@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>troca conteúdo</title>
+</head>
+<body>
+    <!-- Trocar o Conteúdo de um <h1> com o de um Parágrafo
+    Crie uma página com um <h1> e um <p> contendo textos diferentes. Use getElementById()
+    e innerHTML para trocar os conteúdos entre o <h1> e o parágrafo. -->
+        <h1 id="meutitulo">Este é um título.</h1>
+        <p id="meuparagrafo">Este é um parágrafo.</p>
+    <script>
+  
+        var titulo = document.getElementById("meutitulo");
+        var paragrafo = document.getElementById("meuparagrafo");
+  
+         // Guardar os conteúdos atuais
+        var conteudotitulo = titulo.innerHTML
+        var conteudoparagrafo = paragrafo.innerHTML
+        // Trocar os conteúdos
+        titulo.innerHTML = conteudoparagrafo;
+        paragrafo.innerHTML = conteudotitulo;
+
+    </script>
+</body>
+</html>
